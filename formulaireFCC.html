@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <!--en-tete-->
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!--fin en-tete-->
+  <body>
+    <div id="style">
+      <header id="header">
+        <h1 id="title">Quel étudiant êtes-vous?</h1>
+        <p id="description">Sondage sur les formations suivis</p>
+      </header>
+      <hr>
+      <form id="survey-form">
+        
+        <!--formulaire-->
+        <div>
+          <label id="name-label" for="name" class="info">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Your Name" required>
+          <label id="email-label" for="email" class="info">Email:</label>
+          <input id="email" type="email" name="email" placeholder="Your Email"  required>
+          <label id="number-label" for="number" class="info">Age:</label>
+          <input id="number" type="number" name="age" placeholder="Your age" min="18" max="99" required></li>
+        </div>
+        <!--fin formulaire-->
+
+        <!--choix formation-->
+        <div>
+          <p class="info">Quel formation suivez-vous?</p>
+          <select id="dropdown" name="formation" required>
+          <option value="formation">Choix formation</option>
+          <option value="Littéraire">Littéraire</option>
+          <option value="scientifique">Scientifique</option>
+          </select>
+        </div>
+        <!--fin choix formation-->
+
+        <!-- choix à cocher-->
+        <div>
+          <p class="info">Aimer vous la formation que vous suivez?</p>
+          <label><input value="yes" type="radio" name="like" checked>Oui</label>
+          <label><input value="no" type="radio" name="like">Non</label>
+        </div>
+        <!-- fin choix à cocher -->
+
+        <!--checkbox-->
+        <div>
+          <p class="info">Pourquoi suivez-vous cette formation<p>
+          <label><input value="school" type="checkbox" name="choice">Ecole</label>
+          <label><input value="work" type="checkbox" name="choice">Travail</label>
+          <label><input value="hobbit" type="checkbox" name="choice">Passion</label>
+          <label><input value="other" type="checkbox" name="choice">Autre</label>
+        </div>
+        <!--fin checkbox-->
+
+        <!--commentaire-->
+        <div>
+          <p class="info">Commentaire :</p>
+          <textarea name="comment" placeholder="your comment"></textarea>
+        </div>
+        <!--fin commentaire-->
+
+      <div>
+          <button id="submit" type="submit">Submit</button>
+      </div>
+      
+    </form>
+    </div>
+  </body>
+</html>
